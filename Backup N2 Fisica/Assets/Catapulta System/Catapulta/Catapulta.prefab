@@ -371,7 +371,7 @@ MonoBehaviour:
   balls:
   - {fileID: 4742420181833836513, guid: 8018dcc65184e11429c5632057753764, type: 3}
   - {fileID: 7893667134745137302, guid: c7360e29f7127644ba5d8bec4ddecf36, type: 3}
-  - {fileID: 959482302792725863, guid: 5b339e70f506c7d4c88f884204adacb0, type: 3}
+  - {fileID: 4742420181833836513, guid: 5b339e70f506c7d4c88f884204adacb0, type: 3}
   - {fileID: 7758085153458865193, guid: 1192d26ea4159024f8e2946b89b676fc, type: 3}
   - {fileID: 632320221727478198, guid: 39e2d9de85b3cc944bf26616cf095be8, type: 3}
   catapulta: {fileID: 5561648901992724338}
@@ -924,9 +924,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hinge: {fileID: 0}
-  maxRecuo: -60
+  maxRecuo: 0
   recuoSpeed: 50
-  lancamentoSpeed: 1000
+  lancamentoSpeed: 250
   isLaunching: 0
 --- !u!59 &6340899724804347332
 HingeJoint:
@@ -939,7 +939,7 @@ HingeJoint:
   m_ConnectedBody: {fileID: 4637650378349909033}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.06961759, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   m_UseSpring: 0
@@ -957,7 +957,7 @@ HingeJoint:
   m_UseAcceleration: 0
   m_Limits:
     min: 0
-    max: 0
+    max: 60
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
